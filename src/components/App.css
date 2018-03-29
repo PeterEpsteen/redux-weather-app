@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -20,6 +24,54 @@
 
 .App-intro {
   font-size: large;
+}
+
+/* SearchBar */
+.search-bar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+}
+
+.search-bar input {
+  width: 50%;
+  max-width: 800px;
+}
+.submit-button {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0px 5px 5px 0px;
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background: #eee;
+}
+
+.weather-list {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.weather-list th {
+  font-weight: 600;
+}
+
+tr, td, th {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+tr:hover, td:hover, th:hover {
+  background-color: #ddd;
+}
+
+td {
+  vertical-align: top;
 }
 
 @keyframes App-logo-spin {
